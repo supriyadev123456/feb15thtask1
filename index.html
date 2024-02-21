@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            border: 5px solid skyblue;
+            display: grid;
+            grid-template-columns: repeat(5,200px);
+            grid-template-rows: 100px 100px 100px;
+            /* height: 500px; */
+            /* width: 00px; */
+        
+        }
+        .bottom{
+            display: grid;
+            background-color: cadetblue;
+            border: 2px solid black;
+            align-content: center;
+            justify-content: center;
+        }
+        .cd1{
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .cd2{
+            grid-row-start: 2;
+            grid-row-end:4;
+        }
+        .cd3{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .cd4{
+            grid-column-start: 4;
+            grid-column-end: 6;
+        }
+        .cd5{
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="bottom cd1">header</div>
+        <div class="bottom cd2">menu</div>
+        <div class="bottom cd3">main</div>
+        <div class="bottom cd4">right</div>
+        <div class="bottom cd5">footer</div>
+    </div>
+    
+</body>
+</html>
